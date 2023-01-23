@@ -165,3 +165,39 @@ nav ul li:hover .sub-menu {
 .sub-menu li:hover .mega-menu {
   display: block;
 }
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+
+  /* Add animation */
+  animation: preloader 2s linear infinite;
+}
+
+/* Keyframe animation for preloader */
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-bar {
+  width: 0%;
+  height: 5px;
+  background-color: #3498db;
+  transition: width 0.2s;
+}
